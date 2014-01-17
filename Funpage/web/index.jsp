@@ -9,12 +9,12 @@
     <body onload="displaydashboard()">
         <div id="space">
          <div id="panel">
-       <div id="dashboard"><div><a href=signup.html>signup</a></div><div><center><h1 id="time"></h1></center></div></div>
+             <div id="dashboard"><div><form action="signup.html"><input type="submit" value="Sign Up" class="button"/></form></div><div><center><h1 id="time"></h1></center></div></div>
          </div>
          </div>
             
         <div align="center">    
-    <form id="contactform" class="rounded" method="get" action="welcome">
+    <form id="contactform" class="rounded" method="get" action="welcome.jsp">
  
     <div class="field">
     <label for="username">Username:</label>
