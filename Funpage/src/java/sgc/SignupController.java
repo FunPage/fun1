@@ -32,9 +32,13 @@ public class SignupController extends HttpServlet {
     @Override
    public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+       try
+       {
         response.setContentType("text/plain");
         PrintWriter out=response.getWriter();
         out.println("hello world");
+       }
+       catch(Exception e){System.out.println(e);}
     }
 
    
