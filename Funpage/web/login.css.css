@@ -1,0 +1,159 @@
+/* 
+    Document   : login.css
+    Created on : Dec 4, 2013, 8:14:55 AM
+    Author     : sathyanarrayananstark
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+     }
+body
+{
+background-color:#000000; 
+background-image: url('Images/Blue-Abstract-Wallpaper.jpg');
+}
+#logform
+{
+ float: bottom;  
+
+}
+#submit
+{
+    width:60px;
+    height:50px;
+}
+#uname,#pass
+{
+    background-image: url('Images/Blue-Abstract-Wallpaper.jpg');
+}
+#contactform {
+    width: 500px;
+    padding: 20px;
+    background:url('Images/world.gif');
+    overflow:auto;
+ 
+    /* Border style */
+    border: 1px solid #cccccc;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px; 
+ 
+    /* Border Shadow */
+    -moz-box-shadow: 2px 2px 2px #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #cccccc;
+    box-shadow: 2px 2px 2px #cccccc;
+ 
+    }
+    label {
+    color: white;
+    font-family: Arial, Verdana;
+    text-shadow: 2px 2px 2px #ccc;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right:10px;
+    text-align: right;
+    width: 120px;
+    line-height: 25px;
+    font-size: 15px;
+    }
+    .input{
+    font-family: Arial, Verdana;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #b9bdc1;
+    width: 300px;
+    color: #797979;
+    }
+    .hint
+    {
+    display:none;
+    }
+    .field:hover .hint {
+    position: absolute;
+    display: block;
+    margin: -30px 0 0 455px;
+    color: #FFFFFF;
+    padding: 7px 10px;
+    background: rgba(0, 0, 0, 0.6);
+ 
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+    }
+    .button{
+    float: right;
+    margin:10px 55px 10px 0;
+    font-weight: bold;
+    line-height: 1;
+    padding: 6px 10px;
+    cursor:pointer;
+    color: #fff;
+ 
+    text-align: center;
+    text-shadow: 0 -1px 1px #64799e;
+ 
+    /* Background gradient */
+    background: #a5b8da;
+    background: -moz-linear-gradient
+       (top, #a5b8da 0%, #7089b3 100%);
+    background: -webkit-gradient
+       (linear, 0% 0%, 0% 100%,
+       from(#a5b8da), to(#7089b3));
+ 
+    /* Border style */
+    border: 1px solid #5c6f91;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+ 
+    /* Box shadow */
+    -moz-box-shadow: inset 0 1px 0 0 #aec3e5;
+    -webkit-box-shadow: inset 0 1px 0 0 #aec3e5;
+    box-shadow: inset 0 1px 0 0 #aec3e5;
+ 
+    }
+    #space
+    {
+
+        height:295px;
+        
+    }
+   #panel
+    {
+      
+       height:40px;
+       background:lightviolet;
+       display:block;
+       color:white;
+       
+    }
+   #signup:visited,#signup:link
+    {   float: right;
+        display:block;
+        width:120px;
+        font-weight:bold;
+        color:#FFFFFF;
+        background-color:blue;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    .rellink:link,.rellink:visited
+    {
+       color: white;
+       text-shadow: 0 -1px 1px #64799e;  
+    }
+    #dashboard:visited, #dashboard:link
+    {
+       height:40px;
+       display:block;
+       color:white;
+    }
+    h1,h5
+    {
+    color:white;
+    }
