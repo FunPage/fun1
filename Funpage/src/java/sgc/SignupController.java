@@ -39,7 +39,7 @@ public class SignupController extends HttpServlet {
         String firstname=request.getParameter("firstname");
         String lastname=request.getParameter("lastname");
         String profilename=request.getParameter("profilename");
-        String emailid=request.getParameter("email");
+        String emailid=request.getParameter("emailid");
         String password=request.getParameter("password0");
         String DOB=request.getParameter("DOB");
         response.setContentType("text/plain");
