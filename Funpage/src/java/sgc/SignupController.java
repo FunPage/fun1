@@ -36,7 +36,7 @@ public class SignupController extends HttpServlet {
        {
         response.setContentType("text/plain");
         PrintWriter out=response.getWriter();
-        out.println("hello world");
+        
        }
        catch(Exception e){System.out.println(e);}
     }
