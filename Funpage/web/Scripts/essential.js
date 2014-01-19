@@ -27,3 +27,7 @@ function displaydashboard()
     //alert(panelwidth);
     t=setTimeout(function(){displaydashboard()},500);
 }
+function checktext()
+{
+    
+}
