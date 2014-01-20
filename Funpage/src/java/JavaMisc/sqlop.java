@@ -31,13 +31,14 @@ public class sqlop {
     {  ResultSet rs = null;
         try
         {
-        
+        String sql="select * from Users where email=? and password=?";
         Class.forName("com.mysql.jdbc.Driver");
         String Url="jdbc:mysql://localhost:3306/SGC";
         Connection con=DriverManager.getConnection(Url,"root","root");
-        Statement stmt=con.createStatement();
-        rs=stmt.executeQuery("select * from Users where email="+email+" and password="+password);
-
+        PreparedStatement stmt=con.prepareStatement(sql);
+        stmt.setString(1,email);
+        stmt.setString(2,password);
+        rs=stmt.executeQuery();
         }
         catch(Exception e)
         {

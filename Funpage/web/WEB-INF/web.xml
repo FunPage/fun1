@@ -4,6 +4,10 @@
         <servlet-name>SignupController</servlet-name>
         <servlet-class>sgc.SignupController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Logininit</servlet-name>
+        <servlet-class>sgc.Logininit</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SignupController</servlet-name>
         <url-pattern>/SignupController</url-pattern>
@@ -11,6 +15,10 @@
     <listener>
         <listener-class>sgc.dbinit</listener-class>
     </listener>
+    <servlet-mapping>
+        <servlet-name>Logininit</servlet-name>
+        <url-pattern>/Logininit</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
