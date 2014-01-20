@@ -10,9 +10,10 @@ and open the template in the editor.
 <title>Sign up!</title>
 </head>
  <link rel="stylesheet" type="text/css" href="login.css.css"/>
+ <script src="Scripts/signup.js"></script>
 <body>
 <center><h1>Sign Up!</h1></center>
-<center><form id="contactform" class="rounded" method="get" action="SignupController">
+<center><form id="contactform" class="rounded" method="get" action="SignupController" name="signupform"  onsubmit="return(validate());">
 <label for="firstname">Firstname:</label>
 <input type="text" class="input" name="firstname"> 
 <p> </p>
