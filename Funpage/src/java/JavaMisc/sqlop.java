@@ -19,7 +19,7 @@ public class sqlop {
         String Url="jdbc:mysql://localhost:3306/SGC";
         Connection con=DriverManager.getConnection(Url,"root","root");
         Statement stmt=con.createStatement();
-        stmt.executeUpdate("Create Table Users (firstname varchar(255),lastname varchar(255),profilename varchar(255),email varchar(45),password varchar(255),DOB varchar(10))");
+        stmt.executeUpdate("Create Table Users (firstname varchar(255),lastname varchar(255),profilename varchar(255),email varchar(45),password varchar(255),DOB varchar(10),PRIMARY KEY(email))");
     }
     catch(Exception e)
     {
