@@ -14,7 +14,7 @@
          </div>
             
         <div align="center">    
-    <form id="contactform" class="rounded" method="get" action="Logininit">
+    <form id="contactform" class="rounded" method="get" action="welcome.jsp">
  
     <div class="field">
     <label for="username">Username:</label>
