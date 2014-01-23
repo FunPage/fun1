@@ -85,3 +85,8 @@ h1,h2,h3,h4,h5,h6,h7
         border-radius:25px;
         box-shadow: 2px 0px 5px #888888;
     }
+    .tabs
+    {
+        display:block;
+        background-color: menu;
+    }

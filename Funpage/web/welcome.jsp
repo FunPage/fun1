@@ -5,7 +5,26 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page language="java" import="JavaMisc.sqlop"%>
+<%@page language="java" import="java.sql.*"%>
 <!DOCTYPE html>
+<% 
+String username=request.getParameter("username");
+String password=request.getParameter("password");
+String profilename="";
+sqlop s=new sqlop();
+try{
+ResultSet rs=s.Returnset(username, password);
+
+while(rs.next())
+{
+    profilename=rs.getString("profilename");
+}
+   }
+catch(Exception e){
+response.sendRedirect("index.jsp");
+}
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -24,9 +43,9 @@
             </tr>
             <tr>
                 <td id="sidepanel">
-            <center><h2 class="button" style="margin-left: 10px;">UserName</h2></center>
+            <center><h2 class="button" style="margin-left: 10px;"><%=profilename%></h2></center>
                     <p> </p>
-             <center><h2 class="button">Messages</h2></center>
+             <center><h2 class="button" style="margin-left: 50px;">Messages</h2></center>
              <p> </p>
              <center><h2>Reminders</h2></center>
              <center><input type="textarea" rows="6" style="height:150px;border:2px solid;border-radius:25px;"></textarea></center>
