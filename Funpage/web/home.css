@@ -12,7 +12,7 @@ and open the template in the editor.
 {
    width: 1360px;
    height: 40px;
-   background-color: blue;
+   background-color: black;
 }
 #sidepanel
 {
@@ -23,7 +23,7 @@ and open the template in the editor.
 }
 #remspace
 {
-    width:1100px;
+    width:900px;
     height:800px;
     float:left;
     background-image: url('Images/download.jpg');
@@ -31,11 +31,11 @@ and open the template in the editor.
 #footer
 {
     height:50px;
-    background-color:blue;
+    background-color:black;
 }
-#container
+.container
 {
-     background-image: url('Images/download.jpg');
+    background-color: black;
 }
 h1,h2,h3,h4,h5,h6,h7
 {
@@ -78,4 +78,10 @@ h1,h2,h3,h4,h5,h6,h7
         height:150px;
         background-color: yellow;
         
+    }
+    tr,td
+    {
+        border:2px solid;
+        border-radius:25px;
+        box-shadow: 2px 0px 5px #888888;
     }
