@@ -25,6 +25,7 @@ public class dbinit implements ServletContextListener {
             //stmt.executeUpdate("Create Table Users (firstname varchar(255),lastname varchar(255),profilename varchar(255),email varchar(45),password varchar(255),DOB varchar(10)");
             sqlop s=new sqlop();
             s.CreateTable("Users");
+            s.CreatePostTable();
             } catch (Exception ex) {System.out.println("Exception on context");}
     }
 

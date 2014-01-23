@@ -19,7 +19,7 @@ public class sqlop {
         String Url="jdbc:mysql://localhost:3306/SGC";
         Connection con=DriverManager.getConnection(Url,"root","root");
         Statement stmt=con.createStatement();
-        stmt.executeUpdate("Create Table Users (firstname varchar(255),lastname varchar(255),profilename varchar(255),email varchar(45),password varchar(255),DOB varchar(10),PRIMARY KEY(email))");
+        stmt.executeUpdate("Create Table "+tablename+" (firstname varchar(255),lastname varchar(255),profilename varchar(255),email varchar(45),password varchar(255),DOB varchar(10),PRIMARY KEY(email))");
     }
     catch(Exception e)
     {
@@ -74,4 +74,31 @@ public class sqlop {
     {return false;}
     }
     
+    
+    public void CreatePostTable()
+    {
+        try
+        {
+        Class.forName("com.mysql.jdbc.Driver");
+        String Url="jdbc:mysql://localhost:3306/SGC";
+        Connection con=DriverManager.getConnection(Url,"root","root");
+        Statement stmt=con.createStatement();
+        stmt.executeUpdate("create Table Posts(post varchar(500) NOT NULL,username varchar(100) NOT NULL,dateofpost DATETIME NOT NULL,pno int NOT NULL AUTO_INCREMENT,PRIMARY KEY(pno))");
+        }
+        catch(Exception e)
+        {System.out.println("Error in creation of post table");}
+    }
+    public void insetintopost(String post,String username)
+    {
+    try
+    {
+        Class.forName("com.mysql.jdbc.Driver");
+        String Url="jdbc:mysql://localhost:3306/SGC";
+        Connection con=DriverManager.getConnection(Url,"root","root");
+        Statement stmt=con.createStatement();
+        stmt.executeUpdate("Insert into Posts (post,username,dateofpostpost) Values('"+post+"','"+username+"',NOW())");
+    }
+    catch(Exception e)
+    {System.out.println("Error in insertion of post table data");}
+    }
 }

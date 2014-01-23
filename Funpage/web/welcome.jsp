@@ -24,9 +24,9 @@
             </tr>
             <tr>
                 <td id="sidepanel">
-            <center><h2>UserName</h2></center>
+            <center><h2 class="button" style="margin-left: 10px;">UserName</h2></center>
                     <p> </p>
-             <center><h2>Messages</h2></center>
+             <center><h2 class="button">Messages</h2></center>
              <p> </p>
              <center><h2>Reminders</h2></center>
              <center><input type="textarea" rows="6" style="height:150px;border:2px solid;border-radius:25px;"></textarea></center>
@@ -44,7 +44,7 @@
                         </center>
                 </td>
             </tr>
-            <tr id="footer"><td style="background-color: blue;"><center><h7>CopyRight to SGC Technologies.</h7></center></td></tr>
+            <tr id="footer"><td style="background-color: blue;"><center><h7> ©CopyRight to SGC Technologies.</h7></center></td></tr>
         </table></center>
     </body>
 </html>
