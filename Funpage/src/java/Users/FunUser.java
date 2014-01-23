@@ -15,22 +15,29 @@ public class FunUser {
     private String profilename;
     private String emailid;
     private String password;
-    public void setCredentials(String emailid,String password)
-    {
-    this.emailid=emailid;
-    this.password=password;
-    }
-    public void setname(String firstname,String lastname)
-    {
-    this.firstname=firstname;
-    this.lastname=lastname;
-    }
-    public void setDob(String dob)
+    public void setfirstname(String name)
+    {this.firstname=name;}
+    public void setlastname(String name)
+    {this.lastname=name;}
+    public void setDOB(String dob)
     {this.DOB=dob;}
-    public void setprofilename(String profilename)
-    {this.profilename=profilename;}
-    public String getName()
-    {return this.firstname+" "+this.lastname;}
-    public String getProfileinfo()
+    public void setemailid(String email)
+    {this.emailid=email;}
+    public void setpassword(String password)
+    {this.password=password;}
+    public void setprofilename(String name)
+    {this.profilename=name;}
+    public String getfirstname()
+    {return this.firstname;}
+    public String getlastname()
+    {return this.lastname;}
+    public String getDOB()
+    {return this.DOB;}
+    public String getprofilename()
     {return this.profilename;}
+    public String getemailid()
+    {return this.emailid;}
+    public String getpassword()
+    {return this.password;}    
+    
 }
